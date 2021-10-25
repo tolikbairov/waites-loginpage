@@ -5,7 +5,7 @@ export function validateEmail(inputText) {
   if (!inputText.trim()) {
     errormsg = "please enter a email or username";
   } else if (!inputText.match(mailformat)) {
-    errormsg = "please enter a valid email";
+    errormsg = "please enter a valid email or username";
   }
   return errormsg;
 }

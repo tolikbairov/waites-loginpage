@@ -69,3 +69,18 @@ select {
   background-color: #0d6efd;
   border-color: #0d6efd;
 }
+@media screen and (max-width: 768px) {
+  .card {
+    width: 100vw;
+    height: 100vh;
+    border: 0px;
+  }
+  .btn {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 769px) {
+  .card {
+    width: 768px;
+  }
+}

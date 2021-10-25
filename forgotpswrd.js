@@ -15,9 +15,7 @@ function checkEmail(email) {
     return false;
   }
 }
-// email_field.addEventListener("input", (e) => {
-//   checkEmail(e.target.value);
-// });
+
 email_field.addEventListener("blur", (e) => {
   checkEmail(e.target.value);
 });

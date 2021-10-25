@@ -35,15 +35,10 @@ function checkEmail(email) {
   }
 }
 
-// email_field.addEventListener("input", (e) => {
-//   checkEmail(e.target.value);
-// });
 email_field.addEventListener("blur", (e) => {
   checkEmail(e.target.value);
 });
-// password_field.addEventListener("input", (e) => {
-//   checkPassword(e.target.value);
-// });
+
 password_field.addEventListener("blur", (e) => {
   checkPassword(e.target.value);
 });
