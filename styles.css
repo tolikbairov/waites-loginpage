@@ -27,6 +27,8 @@ dd {
 }
 
 body {
+  display: flex;
+  align-items: center;
   min-height: 100vh;
   scroll-behavior: smooth;
   text-rendering: optimizeSpeed;
@@ -53,16 +55,14 @@ textarea,
 select {
   font: inherit;
 }
-form {
-  width: 500px;
-}
-.container {
+
+/* .container {
   height: 100vh;
   flex-direction: column;
   display: flex;
   align-items: center;
   justify-content: center;
-}
+} */
 .btn:focus {
   outline: none;
   box-shadow: none;

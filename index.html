@@ -15,78 +15,51 @@
     <title>Document</title>
   </head>
   <body>
-    <div class="container">
-      <div class="card mt-3">
-        <div class="card-header">
-          <h3>Sign In</h3>
-        </div>
-        <div class="card-body">
-          <div class="card-title">
-            <!-- <form>
-                  <div class="form-group">
-                    <label for="exampleInputEmail1">Email address</label>
-                    <input
-                      type="email"
-                      class="form-control"
-                      id="exampleInputEmail1"
-                      aria-describedby="emailHelp"
-                      placeholder="Enter email"
-                    />
-                    <small id="emailHelp" class="form-text text-muted"
-                      >We'll never share your email with anyone else.</small
-                    >
+    <div class="container h-100">
+      <div class="row d-flex flex-column justify-content-center align-items-center h-100">
+        <div class="col-12 col-md-9 col-lg-7 col-xl-6">
+          <div class="card mt-3">
+            <div class="card-body p-5">
+            <h2 class="text-uppercase mb-5">Sign in</h2>
+            <div class="card-title" style="border-radius: 15px">
+              <form>
+                <div class="form-outline mb-4">
+                  <label for="exampleInputEmail1" class="form-label"
+                    >Email address or username</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control form-control-lg"
+                    id="exampleInputEmail1"
+                    aria-describedby="emailHelp"
+                  />
+
+                  <div class="invalid-feedback email_invalid-feedback">
+                    Please enter a message in the textarea.
                   </div>
-                  <div class="form-group mt-2">
-                    <label for="exampleInputPassword1">Password</label>
-                    <input
-                      type="password"
-                      class="form-control"
-                      id="exampleInputPassword1"
-                      placeholder="Password"
-                    />
+                </div>
+                <div class="form-outline mb-4">
+                  <label for="exampleInputPassword1" class="form-label"
+                    >Password</label
+                  >
+                  <input
+                    type="password"
+                    class="form-control form-control-lg"
+                    id="exampleInputPassword1"
+                  />
+                  <div class="invalid-feedback password_invalid-feedback">
+                    Please enter a message in the textarea.
                   </div>
-
-                  <button type="submit" class="btn btn-success mt-2">
-                    Submit
-                  </button>
-                </form> -->
-            <form>
-              <div class="mb-3">
-                <label for="exampleInputEmail1" class="form-label"
-                  >Email address</label
-                >
-                <input
-                  type="email"
-                  class="form-control"
-                  id="exampleInputEmail1"
-                  aria-describedby="emailHelp"
-                />
-
-                <div class="invalid-feedback email_invalid-feedback">
-                  Please enter a message in the textarea.
                 </div>
-              </div>
-              <div class="mb-3">
-                <label for="exampleInputPassword1" class="form-label"
-                  >Password</label
-                >
-                <input
-                  type="password"
-                  class="form-control"
-                  id="exampleInputPassword1"
-                />
-                <div class="invalid-feedback password_invalid-feedback">
-                  Please enter a message in the textarea.
+                <div class="form-outline mb-4">
+                  <a href="./forgot_password.html">Forgot password</a>
                 </div>
-              </div>
-              <div class="mb-3">
-                <a href="./forgot_password.html">Forgot password</a>
-              </div>
 
-              <button type="submit" class="btn btn-primary login-btn">
-                Sign in
-              </button>
-            </form>
+                <button type="submit" class="btn btn-primary login-btn">
+                  Sign in
+                </button>
+              </form>
+            </div>
           </div>
         </div>
       </div>

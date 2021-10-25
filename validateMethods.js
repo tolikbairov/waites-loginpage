@@ -1,8 +1,9 @@
 export function validateEmail(inputText) {
-  var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+  var mailformat =
+    /^(?=[a-z0-9.]{3,20}$)[a-z0-9]+\.?[a-z0-9]+$|^.*@\w+\.[\w.]+$/i;
   let errormsg = "";
   if (!inputText.trim()) {
-    errormsg = "please enter a email";
+    errormsg = "please enter a email or username";
   } else if (!inputText.match(mailformat)) {
     errormsg = "please enter a valid email";
   }
